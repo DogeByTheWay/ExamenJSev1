@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>DAW</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+		 <h2 class="text-danger">Método letraCapital </h2>
+
+</body>
+
+<script>
+//Añadir el método nuevo a la clase String
+
+String.prototype.letraCapital=function(){
+  let capital="";
+  let frase=this.split(" ");
+  frase.forEach(palabra => {
+    capital+=palabra.charAt(0).toUpperCase() + palabra.slice(1) + " ";
+  });
+  return capital;
+}
+cadena=prompt("Dime cadena")
+
+//console.log de la cadena original
+
+console.log("cadena original: " + cadena)
+
+//console.log de la cadena con el nuevo metodo
+
+console.log("cadena letraCapital: " + cadena.letraCapital())
+
+</script>
+
+</html>

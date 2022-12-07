@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+			
+		<!-- Enlaces a los ficheros js para resolver la practica -->	
+		<script src="js/datos.js"></script>
+		<script src="js/claseMatricula.js"></script>
+		<script src="js/matricula.js"></script>
+							   
+	</head>
+	
+	
+	
+	<body>
+		<br>
+		<center><h2>Matrícula parcial de 2DAW
+		<button id="btnAbreDatosPersonales"class="btn btn-dark">Datos personales del alumno</button>
+		</h2>
+		</center> 
+		<br>
+		
+		<!-- Div contenedor de los cards de modulos -->
+		<div id="contenedor" class="row row-cols-1 row-cols-md-6 g-4"></div>
+
+		<!-- Div contenedor de los modulos que hemos seleccionado-->
+		<div id="capamatricula"></div>
+		
+		<!-- Componente HTML para dialogos modales -->
+		<dialog id="formDatos">					
+			<b>Datos personales</b>
+			<div class="form-group">
+				<label for="id">Dni</label>
+				<input type="input" class="form-control" id="dni">
+			</div>
+			<div class="form-group">
+				<label for="id">Nombre</label>
+				<input type="input" class="form-control" id="nombre">
+			</div>				
+			<div class="text-center">
+				<button id="btnCierraDatosPersonales"class="btn btn-success">Guardar alumno</button>
+			</div>
+	</dialog>
+		
+	</body>
+</html>

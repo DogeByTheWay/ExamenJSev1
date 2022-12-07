@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>DAW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+ 
+  <!-- Enlace al fichero buscador.js de la carpeta js -->
+  <script src="js/buscador.js"></script>
+ 
+</head>
+
+<body>
+
+	<!-- Navbar BootStrap -->
+	<nav class="navbar navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+		 <h2 class="text-danger">Buscador de Articulos y Vendedores</h2>
+	  </a>  
+	</nav>
+	
+	<br>
+		<!-- No deberia estar el onclick en la etiqueta button, pero para ahorraros tiempo y complicaciones lo pasaremos-->	
+
+		<button id="btnBuscarArticulo" class="btn btn-primary" onclick="buscarArticulo()">Buscar Articulo</button>  
+		<button id="btnBuscarVendedor" class="btn btn-primary" onclick="buscarVendedor()">Buscar Vendedor</button>  
+		<button id="btnBuscarArticuloVendedor" class="btn btn-success" onclick="buscarArticuloVendedor()">Buscar Articulo y Vendedor</button>
+
+</body>
+
+</html>
